@@ -49,21 +49,21 @@ function App() {
           -10
         </button>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex flex-col md:flex-row items-center gap-2 ">
         <input
           type="number"
           value={inputValue}
           onChange={handleChange}
-          className="px-2 py-1 border rounded"
+          className="px-2 py-1 border rounded w-full md:w-auto"
         />
         <button
-          className="px-3 py-1 bg-green-500 text-white rounded"
+          className="px-3 py-1 bg-green-500 text-white rounded w-full md:w-auto"
           onClick={handleAdd}
         >
           +입력값
         </button>
         <button
-          className="px-3 py-1 bg-yellow-500 text-white rounded"
+          className="px-3 py-1 bg-yellow-500 text-white rounded w-full md:w-auto"
           onClick={handleSubtract}
         >
           -입력값
